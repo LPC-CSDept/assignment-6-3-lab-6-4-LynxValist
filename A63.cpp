@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int getSum(int);
+
 int main(){
     int N; //numbers in list
     int sum; 
@@ -20,7 +22,7 @@ int main(){
 int getSum(int N){
     int max, min, sum, num;
     for(int i = 0; i < N; i ++) {
-        cout << "Enter number " <<i<< endl;
+        cout << "Enter number " <<i+1<< ":"<<endl;
         cin>>num;
         if(i == 0){
             max = num;
